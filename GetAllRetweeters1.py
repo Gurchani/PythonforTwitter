@@ -7,10 +7,10 @@ import time
 import pyping
 import MySQLdb
 
-CONSUMER_KEY = '3GBcntAc72EGkNCj4OZE1Tp9R'
-CONSUMER_SECRET = 'XKvyommPOT3cGwZhEfoIzd33RgzC2bRUxCrTwpw1HrA4UOV6bG'
-ACCESS_KEY = '275605019-MqytKqqiYvkLEUWF4SoCTFVaMAXEjIpUdd6EUXs1'
-ACCESS_SECRET = '4gAQblCutLddsYdRBFd6apRQLDbhZzgHozqQ9cQOGx5bg'
+CONSUMER_KEY = ''
+CONSUMER_SECRET = ''
+ACCESS_KEY = ''
+ACCESS_SECRET = ''
 
 consumer = oauth.Consumer(key=CONSUMER_KEY, secret=CONSUMER_SECRET)
 access_token = oauth.Token(key=ACCESS_KEY, secret=ACCESS_SECRET)
