@@ -1,9 +1,11 @@
+#Tells you who retweets a perticlar profile
+
 import tweepy
 
-ckey = '3jlzFiMtjZgNP6mwpbjMtj8U2'
-csecret = '5TNiXf8e4CAtorYWMw5oRi76JYCbn1HVvT3o90NHlQdrVMsc9M'
-atoken = '275605019-eFkeyHZbRx2iGxV3DBoudOgH3uzpaeWep3bvBCSF'
-asecret = 'eTjrgHLAsc5mXajRmfngajJojih8R2KXeBSOe3Jh5JCM0'
+ckey = ''
+csecret = ''
+atoken = ''
+asecret = ''
 
 auth = tweepy.OAuthHandler(ckey, csecret)
 auth.set_access_token(atoken, asecret)
