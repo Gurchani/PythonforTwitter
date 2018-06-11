@@ -1,3 +1,6 @@
+#This tweet gives you a list of most active retweeters of a perticular user and puts them in an excel sheet and also in mysql databse
+#Change "Subject"to get details on the twitter user of your own choice
+
 import oauth2 as oauth
 import json
 import xlrd
@@ -7,19 +10,19 @@ import time
 import pyping
 import MySQLdb
 
-CONSUMER_KEY = 'Q7vnH9Omri4kvXE4fkopKI9tZ'
-CONSUMER_SECRET = '2ulhp2QGkw1jfA7vxfIzkZboI52G56mVXfTql21uHRwXT8Oe7l'
-ACCESS_KEY = '729312774241832960-IzqShs7gPoPevNdy31KYt1axlkPUB7S'
-ACCESS_SECRET = '72tf78cUaASbXEvKT3zP4aUlmjSm5dV0qwNZVicTA8X7I'
+CONSUMER_KEY = ''
+CONSUMER_SECRET = ''
+ACCESS_KEY = ''
+ACCESS_SECRET = ''
 
 consumer = oauth.Consumer(key=CONSUMER_KEY, secret=CONSUMER_SECRET)
 access_token = oauth.Token(key=ACCESS_KEY, secret=ACCESS_SECRET)
 client = oauth.Client(consumer, access_token)
 
-db = MySQLdb.connect(host="localhost",    # your host, usually localhost
-                     user="root",         # your username
+db = MySQLdb.connect(host="",    # your host, usually localhost
+                     user="",         # your username
                      passwd="",  # your password
-                     db="retweeters",
+                     db="",
                      use_unicode=True,
                      charset="utf8")        # name of the data base
 
@@ -77,15 +80,7 @@ for i in table.col_values(0):
 
 
 
-###This will get 3200 most recent tweets of a user
-##recentTweets = "https://api.twitter.com/1.1/statuses/user_timeline.json?screen_name=mlp_officiel&count=3200"
-##response2, data2 = client.request(recentTweets)
-##
-##tweets = json.loads(data2)
-##print len(tweets)
-##for i in tweets:    
-##    print i["text"]
-##    print i["id"]
+
 
 
 
