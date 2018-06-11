@@ -1,3 +1,6 @@
+#This code gets you get you the 3200 most recent tweets of any user 
+#Here i do not use any wrapper so you can modify the variable "recenetTweets"to get make requests for your own subject
+
 import oauth2 as oauth
 import json
 
