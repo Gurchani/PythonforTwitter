@@ -1,3 +1,5 @@
+#Scraps almost all the tweets of any user from twitter 
+
 from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
 from selenium.common.exceptions import NoSuchElementException, StaleElementReferenceException
